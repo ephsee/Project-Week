@@ -1,0 +1,37 @@
+{
+    "facts":[
+        {
+        "gratitude_fact_1" : "A regular gratitude protocal can provide resilience to trauma in two ways. First, it can help to reframe the event so it is not as difficult, and it can innoculate or prevent future suffering through the resilience it can help build. *Andrew Huberman, neurobiology and ophthalmology at Stanford School of Medicine.",
+        "gratitude_fact_2": "Gratitude practices that help promote positve feelings of contentment are a reseult of the release of the neortransmitter serontonin. Narrative story-telling, where a person shares how another person helped htem through a hard time, can provide a sense of wellbeing, as proven by studeis done inside of MRIs imaging the brain.",
+        "gratitude_fact_3": "The fear and defence mechanisms in the brain can become less overreactive, buffering you against the harsh effects of trauma by bolstering your resilience to difficult circumstances through a regular gratitude practice.",
+        "gratitude_fact_4": "Simply writing a list of what you are grateful for has no proven efficacy at boosting your brain health or causing feelings of wellbeing."
+        }
+    ],
+
+    "stories":[
+        {   
+        "id": 1,
+        "your_first_name": "Lara",
+        "name_of_person": "Jacie Feinberg",
+        "role": "mentor",
+        "story": "Jacie was the director of a preschool I was a new teacher at. She showed me by example how to do things, never shaming me. Her presence, skills, and generosity of time to expose me to those lessons taught me more than I ever learned in school. Thank you Jacie!",
+        "image_url": "https://scontent-lga3-2.xx.fbcdn.net/v/t39.30808-6/272130005_681660896544034_4532378074673035445_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=cJ6KppI0KGQAX-G7WdR&tn=C_p5uSNmcXb5zyMe&_nc_ht=scontent-lga3-2.xx&oh=00_AT8XCC_d0CzjuOlnbU2dJ9lshQ1gjl1wOmFPRzqXRCv_Mw&oe=62100825",
+        "thank_thank_note": "Jacie, thank you for showing me by example and never judging me"
+        },
+        {
+        "id": 2,
+        "your-first-name": "Lara",
+        "name-of-person": "Corinne",
+        "role": "friend",
+        "story": "Rinne taught me the value of playful laughter, being outside in nature, and sillyness",
+        "image_url": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fd3trabu2dfbdfb.cloudfront.net%2F1%2F1%2F11018125_300x300_1.jpeg&imgrefurl=http%3A%2F%2Fhosting-6829.tributes.com%2Fobituary%2Fshow%2FCorinne-Vivian-Feeley--108496948&tbnid=KB961i-mnmriBM&vet=12ahUKEwiczon6zf_1AhXDYDUKHaqjDvsQMygCegQIARAo..i&docid=W0uMzl-Knz8WMM&w=300&h=300&q=corinne%20feeley&ved=2ahUKEwiczon6zf_1AhXDYDUKHaqjDvsQMygCegQIARAo",
+        "thank_thank_note": "Thank you Rinne for making me laugh, love you!"
+        }
+    ],
+
+    "comments": [
+        
+    ]
+
+}
+   

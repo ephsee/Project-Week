@@ -9,9 +9,6 @@ function Home() {
             <p>{textAbout}  </p>
         </>
     )
-
-
 }
-
 
 export default Home;
