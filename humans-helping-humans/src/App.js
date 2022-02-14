@@ -1,6 +1,6 @@
-import './App.css';
+import './App.css'
 import React from "react"
-import {Route, Switch, NavLink} from "react-router-dom";
+import {Route, Switch, NavLink} from "react-router-dom"
 import About from './About'
 import StoriesList from './StoriesList'
 import Resources from './Resources'
@@ -10,23 +10,25 @@ function App() {
 
   return (
     <div className="App App-header">
-    <NavBar />
-     <Switch>
-        <Route path="/about">
-          <About />
-        </Route>
-        <Route path="/storieslist">
-          <StoriesList />
-        </Route>
-        <Route path="/resources">
-          <Resources />
-        </Route>
-      </Switch>
-
-      <div className="App App-header">
-        <Home />
+      <div>
+        <NavBar />
+          <Switch>
+              <Route exact path="/">
+                <Home />
+              </Route>
+              <Route path="/about">
+                <About />
+              </Route>
+              <Route path="/storieslist">
+                <StoriesList />
+              </Route>
+              <Route path="/resources">
+                <Resources />
+              </Route>
+          </Switch>
       </div>
     </div>
+
   );
 }
 
@@ -34,7 +36,7 @@ export default App;
 
 const linkStyles = {
   display: "inline-block",
-  width: "50px",
+  width: "500px",
   padding: "12px",
   margin: "0 6px 6px",
   background: "black",
