@@ -5,7 +5,10 @@ const textAbout = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cura
 function Home() {
     return (
         <>
-            <h1 className="title"> About</h1>
+            <h1 className="main title"> About</h1>
+            <p>{textAbout}  </p>
+
+            <h2 className="tittle"> Why? </h2>
             <p>{textAbout}  </p>
         </>
     )
