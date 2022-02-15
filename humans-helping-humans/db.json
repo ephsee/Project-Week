@@ -1,10 +1,18 @@
 {
     "facts": [
         {
-        "gratitude_fact_1" : "A regular gratitude protocal can provide resilience to trauma in two ways. First, it can help to reframe the event so it is not as difficult, and it can innoculate or prevent future suffering through the resilience it can help build. *Andrew Huberman, neurobiology and ophthalmology at Stanford School of Medicine.",
-        "gratitude_fact_2": "Gratitude practices that help promote positve feelings of contentment are a reseult of the release of the neortransmitter serontonin. Narrative story-telling, where a person shares how another person helped htem through a hard time, can provide a sense of wellbeing, as proven by studeis done inside of MRIs imaging the brain.",
-        "gratitude_fact_3": "The fear and defence mechanisms in the brain can become less overreactive, buffering you against the harsh effects of trauma by bolstering your resilience to difficult circumstances through a regular gratitude practice.",
-        "gratitude_fact_4": "Simply writing a list of what you are grateful for has no proven efficacy at boosting your brain health or causing feelings of wellbeing."
+        "id": 1,
+        "gratitude_fact" : "A regular gratitude protocal can provide resilience to trauma in two ways. First, it can help to reframe the event so it is not as difficult, and it can innoculate or prevent future suffering through the resilience it can help build. *Andrew Huberman, neurobiology and ophthalmology at Stanford School of Medicine."
+        },
+        {
+        "id": 2,
+        "gratitude_fact": "Gratitude practices that help promote positve feelings of contentment are a reseult of the release of the neortransmitter serontonin. Narrative story-telling, where a person shares how another person helped htem through a hard time, can provide a sense of wellbeing, as proven by studeis done inside of MRIs imaging the brain."
+        },{
+        "id": 3,
+        "gratitude_fact": "The fear and defence mechanisms in the brain can become less overreactive, buffering you against the harsh effects of trauma by bolstering your resilience to difficult circumstances through a regular gratitude practice."
+    }, {
+        "id": 4,
+        "gratitude_fact": "Simply writing a list of what you are grateful for has no proven efficacy at boosting your brain health or causing feelings of wellbeing."
         }
     ],
 
