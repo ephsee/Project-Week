@@ -2,7 +2,13 @@ import {useState} from 'react'
 
 function NewStoryForm ({stories, setStories}) {
 
-    const [addStory, setAddStory] = useState({})
+    const [name, setName] = useState('')
+    const [person, setPerson] = useState('')
+    const [role, setRole] = useState('')
+    const [story, setStory] = useState('')
+    const [image, setImage] = useState('')
+    const [thanks, setThanks] = useState('')
+
 
     function handleSubmit(e){
         e.preventDefault()
@@ -10,36 +16,42 @@ function NewStoryForm ({stories, setStories}) {
     }
 
     const newStory = {
-        "your_first_name":"",
-        "name_of_person":"",
-        "role": "",
-        "story":"",
-        "image_url":"",
-        "thank_you_note":"",
+        "your_first_name": name,
+        "name_of_person": person,
+        "role": role,
+        "story": story,
+        "image_url": image,
+        "thank_you_note": thanks,
     }
 
     function handleName(e) {
         console.log(e.target.value)
+        setName(e.target.value)
     }
 
     function handlePerson(e) {
         console.log(e.target.value)
+        setPerson(e.target.value)
     }
 
     function handleRole(e) {
         console.log(e.target.value)
+        setRole(e.target.value)
     }
 
     function handleStory(e) {
         console.log(e.target.value)
+        setStory(e.target.value)
     }
 
     function handleImage(e) {
         console.log(e.target.value)
+        setImage(e.target.value)
     }
 
     function handleThanks(e) {
         console.log(e.target.value)
+        setThanks(e.target.value)
     }
 
     return (
