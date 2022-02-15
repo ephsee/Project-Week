@@ -14,7 +14,7 @@ function StoriesList() {
 
     useEffect(()=>{
 
-        const doTheFecth = new AbortController();
+        const controller = new AbortController();
 
         fetch("http://localhost:6001/stories")
         .then(r=>r.json())
@@ -22,7 +22,7 @@ function StoriesList() {
 
         return () => {
             
-        doTheFecth.abort();}
+        controller.abort();}
 
     },[])
 
@@ -31,7 +31,9 @@ function StoriesList() {
     return (
         <div>
             <hr></hr>
-            <div onClick={clickShow}> {showStories ? ' CLICK ME TO ADD A STORY! ' : <NewStoryForm stories={stories} setStories={setStories}/>} </div>
+            <div onClick={clickShow}>CLICK ME TO ADD A STORY!</div>
+            <hr></hr>
+            <div>{showStories ? null : <NewStoryForm stories={stories} setStories={setStories}/>}</div>
             <hr></hr>
             <h3>Read User Stories</h3>
             

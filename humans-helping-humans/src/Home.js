@@ -27,7 +27,7 @@ function Home() {
     // }
     
     console.log('all facts', facts)
-    console.log('a random fact', randomFact.gratitude_fact)
+    // console.log('a random fact', randomFact.gratitude_fact)
     // console.log('rando state', rando.gratitude_fact)
 
     return (

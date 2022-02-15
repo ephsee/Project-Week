@@ -13,6 +13,10 @@ function NewStoryForm ({stories, setStories}) {
     function handleSubmit(e){
         e.preventDefault()
         setStories([newStory, ...stories])
+
+        useEffect(()=>{
+            fetch('http://localhost:6001/stories')
+        })
     }
 
     const newStory = {
@@ -61,9 +65,10 @@ function NewStoryForm ({stories, setStories}) {
                 <input onChange={handleName} type="text" placeholder="Your Name"></input><br></br>
                 <input onChange={handlePerson} type="text" placeholder="Your Person"></input><br></br>
                 <input onChange={handleRole} type="text" placeholder="Their Role"></input><br></br>
-                <input onChange={handleStory} type="text" placeholder="Share A Story"></input><br></br>
                 <input onChange={handleImage} type="text" placeholder="Share an Image"></input><br></br>
-                <input onChange={handleThanks} type="text" placeholder="Show Some Thanks"></input><br></br>
+                <input onChange={handleThanks} type="text" placeholder="Write a Thank You Note"></input><br></br>
+                <br></br>
+                <textarea rows="5" cols="45" onChange={handleStory} type="text" placeholder="Share A Story"></textarea><br></br>
                 <input onClick={handleSubmit} type="submit"></input>
             </form>
             <hr></hr>
