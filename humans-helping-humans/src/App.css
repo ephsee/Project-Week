@@ -1,13 +1,23 @@
+body {
+  background-color: black;
+}
+
 .App {
   text-align: center;
 }
 
 .App-header {
-  background-color: #282c34;
+
+  /* font-family: 'Calligraffitti', cursive; */
+  /* font-family: 'Palette Mosaic', cursive; */
+  /* font-family: 'Raleway', sans-serif; */
+  font-family: 'Rye', cursive;
+
+  background-color: #005F73;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: darkgrey;
 }

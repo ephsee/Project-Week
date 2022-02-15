@@ -26,7 +26,7 @@ function StoriesList() {
 
     },[])
 
-    const storyCard = stories.map(story =>  <Story key={story.id} story={story}/>)
+    const storyCard = stories.map(story =>  <Story key={story.name_of_person} story={story}/>)
 
     return (
         <div>

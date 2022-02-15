@@ -36,10 +36,11 @@ export default App;
 
 const linkStyles = {
   display: "inline-block",
+  borderRadius: "20px",
   width: "500px",
   padding: "12px",
   margin: "0 6px 6px",
-  background: "black",
+  background: "#9B2226",
   textDecoration: "none",
   color: "white",
 }
@@ -55,9 +56,9 @@ function NavBar() {
             to="/about"
             exact
             style={linkStyles}
-            activeStyle={{
-              background: "black",
-            }}
+            // activeStyle={{
+            //   background: "black",
+            // }}
           >
             About
           </NavLink>
@@ -65,9 +66,9 @@ function NavBar() {
             to="/storieslist"
             exact
             style={linkStyles}
-            activeStyle={{
-              background: "black",
-            }}
+            // activeStyle={{
+            //   background: "black",
+            // }}
           >
             Stories List
           </NavLink>
@@ -75,9 +76,9 @@ function NavBar() {
             to="/resources"
             exact
             style={linkStyles}
-            activeStyle={{
-              background: "black",
-            }}
+            // activeStyle={{
+            //   background: "black",
+            // }}
           >
             Resources
           </NavLink>
@@ -94,8 +95,6 @@ function HomeButton() {
   }
 
   return (
-    <p style={linkStyles} type="button" onClick={handleClick}>
-      Home
-    </p>
+    <p style={linkStyles} type="button" activeStyle={{background: "black"}} onClick={handleClick}>Home </p>
   )
 }
