@@ -6,6 +6,12 @@ function StoriesList() {
 
     const [stories, setStories] = useState([])
 
+    const [showStories, setShowStories] = useState(true)
+
+    function clickShow() {
+        setShowStories(!showStories)
+    }
+
     useEffect(()=>{
 
         const doTheFecth = new AbortController();
@@ -20,15 +26,13 @@ function StoriesList() {
 
     },[])
 
-    console.log(stories)
-
     const storyCard = stories.map(story =>  <Story key={story.id} story={story}/>)
 
     return (
         <div>
-
-            <NewStoryForm stories={stories} setStories={setStories}/>
-
+            <hr></hr>
+            <div onClick={clickShow}> {showStories ? ' CLICK ME TO ADD A STORY! ' : <NewStoryForm stories={stories} setStories={setStories}/>} </div>
+            <hr></hr>
             <h3>Read User Stories</h3>
             
             {storyCard}
