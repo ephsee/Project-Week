@@ -14,9 +14,17 @@ function NewStoryForm ({stories, setStories}) {
         e.preventDefault()
         setStories([newStory, ...stories])
 
-        useEffect(()=>{
-            fetch('http://localhost:6001/stories')
-        })
+        fetch('http://localhost:6001/stories', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(newStory),
+            })
+            .then(response => response.json())
+            .then(data => {
+            console.log('Success:', data);
+})
     }
 
     const newStory = {
