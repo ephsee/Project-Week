@@ -2,8 +2,8 @@
 function About() {
     return (
         <div>
-        <h2 className="title"> Why? </h2>
-        <p>something</p>
+            <h3> About Humans Helping Humans </h3>
+            <p> something nice about the history and purpose of the app </p>
         </div>
     )
 }

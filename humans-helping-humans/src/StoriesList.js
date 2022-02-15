@@ -1,5 +1,6 @@
 import Story from './Story'
 import {useState, useEffect} from 'react'
+import NewStoryForm from './NewStoryForm'
 
 function StoriesList() {
 
@@ -15,7 +16,7 @@ function StoriesList() {
 
         return () => {
             
-            doTheFecth.abort();}
+        doTheFecth.abort();}
 
     },[])
 
@@ -25,7 +26,13 @@ function StoriesList() {
 
     return (
         <div>
+
+            <NewStoryForm stories={stories} setStories={setStories}/>
+
+            <h3>Read User Stories</h3>
+            
             {storyCard}
+
         </div>
     )
 }
