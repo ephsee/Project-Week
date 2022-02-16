@@ -9,12 +9,9 @@ function NewStoryForm({ makeNewStory }) {
     const [image, setImage] = useState('')
     const [thanks, setThanks] = useState('')
 
-
-
+    
     function handleSubmit(e) {
         e.preventDefault()
-
-
 
         console.log(newStory);
         makeNewStory(newStory)

@@ -5,11 +5,13 @@ function Story({ story, removeFecthStory, patchLikes }) {
     
     const [likes, setLikes] = useState(story.likes);
 
-    const trashPost = () => {
+    const trashPost = (e) => {
+        e.preventDefault();
         removeFecthStory(story)
     }
 
-    const likeIt = () => {
+    const likeIt = (e) => {
+        e.preventDefault()
         const newLikes = likes + 1;
         setLikes(newLikes)
         patchLikes(story, newLikes)

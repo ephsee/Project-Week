@@ -18,7 +18,6 @@ function StoriesList() {
 
     const makeNewStory = (story) => {
 
-
         fetch('http://localhost:6001/stories', {
             method: 'POST',
             headers: {
@@ -31,13 +30,10 @@ function StoriesList() {
             console.log('Success:', data);
             console.log(stories)
             
+            setStories([...stories, story]);
+            getFetchStories();
+            
         })
-
-
-
-        setStories([...stories,story]);
-        getFetchStories();
-
     }
 
     const getFetchStories = () => {

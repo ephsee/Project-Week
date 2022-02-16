@@ -1,6 +1,8 @@
 import { useState } from 'react'
 
 function ResourceCard({resources, setResources}) {
+
+    console.log(resources)
     
     const [newComment, setNewComment] = useState('')
 
@@ -22,7 +24,6 @@ function ResourceCard({resources, setResources}) {
             .then(response => response.json())
             .then(setResources([aComment, ...resources]))
             
-        
     }
     
     function handleComment(e) {
@@ -30,7 +31,7 @@ function ResourceCard({resources, setResources}) {
         setNewComment(e.target.value)
     }
     
-    const resource = resources.map( r=> <ul><li key={r.comment}>{r.comment}</li></ul>)
+    const resource = resources.map( r=> <li key={r.comment}>{r.comment}</li>)
         
         return (
             <div>
@@ -39,7 +40,7 @@ function ResourceCard({resources, setResources}) {
                     <textarea rows="5" cols="45" onChange={handleComment} type="text" placeholder="Share Your Resources and Tips" value={newComment}></textarea><br></br>
                     <input onClick={commentSubmit} type="submit"></input>
                 </form>
-                <div>{resource}</div>
+                <div><ul>{resource}</ul></div>
             </div>
   )
 }
