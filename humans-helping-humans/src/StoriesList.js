@@ -26,7 +26,14 @@ function StoriesList() {
 
     },[])
 
-    const storyCard = stories.map(story =>  <Story key={story.name_of_person} story={story}/>)
+    // function storyIndex(){
+
+    // for (i = stories.length; i > 0 ; i--) {
+    //     stories[i-1]
+    //     return <Story key={stories[i-1].name_of_person} story={stories[i-1]}/>
+    // }}
+
+    const storyCard = stories.reverse().map(story => <Story key={story.name_of_person} story={story}/>)
 
     return (
         <div>

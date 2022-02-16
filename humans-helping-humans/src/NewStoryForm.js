@@ -12,7 +12,8 @@ function NewStoryForm ({stories, setStories}) {
 
     function handleSubmit(e){
         e.preventDefault()
-        setStories([newStory, ...stories])
+        setStories([...stories, newStory])
+      
 
         fetch('http://localhost:6001/stories', {
             method: 'POST',
@@ -24,6 +25,8 @@ function NewStoryForm ({stories, setStories}) {
             .then(response => response.json())
             .then(data => {
             console.log('Success:', data);
+            console.log(stories)
+            
         })
     }
 
