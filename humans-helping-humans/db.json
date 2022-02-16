@@ -15,6 +15,14 @@
     {
       "id": 4,
       "gratitude_fact": "Simply writing a list of what you are grateful for has no proven efficacy at boosting your brain health or causing feelings of wellbeing."
+    },
+    {
+      "id": 5,
+      "gratitude_fact": "Grateful people experience fewer aches and pains and they report feeling healthier than other people, according to a 2012 study published in Personality and Individual Differences. Not surprisingly, grateful people are also more likely to take care of their health.  They exercise more often and are more likely to attend regular check-ups with their doctors, which is likely to contribute to further longevity."
+    },
+    {
+      "id": 6,
+      "gratitude_fact": "Grateful people are more likely to behave in a prosocial manner, even when others behave less kind, according to a 2012 study by the University of Kentucky. Study participants who ranked higher on gratitude scales were less likely to retaliate against others, even when given negative feedback. They experienced more sensitivity and empathy toward other people and a decreased desire to seek revenge."
     }
   ],
   "stories": [
@@ -25,8 +33,12 @@
       "role": "teacher",
       "story": "From being a very kind man, teacher, rugby coach, high-school friend of my both my Mother and Aunt, musician and local legend to just being a kind human, Paul Anthony has inspired many young men to be patient and thoughtful in the heat of conflict and dismay. ",
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnpvtXMErPTJsd4a7_14tVes1LbaR2Ke-C0A&usqp=CAU",
+<<<<<<< Updated upstream
       "thank_you_note": "Shot-a-lot Mr Ants.",
       "likes": 15
+=======
+      "thank_you_note": "Shot-a-lot Mr Ants."
+>>>>>>> Stashed changes
     },
     {
       "id": 2,
@@ -45,8 +57,12 @@
       "role": "mentor",
       "story": "Jacie was the director of a preschool I was a new teacher at. She showed me by example how to do things, never shaming me. Her presence, skills, and generosity of time to expose me to those lessons taught me more than I ever learned in school. Thank you Jacie!",
       "image_url": "https://scontent-lga3-2.xx.fbcdn.net/v/t39.30808-6/272130005_681660896544034_4532378074673035445_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=cJ6KppI0KGQAX-G7WdR&tn=C_p5uSNmcXb5zyMe&_nc_ht=scontent-lga3-2.xx&oh=00_AT8XCC_d0CzjuOlnbU2dJ9lshQ1gjl1wOmFPRzqXRCv_Mw&oe=62100825",
+<<<<<<< Updated upstream
       "thank_you_note": "Jacie, thank you for showing me by example and never judging me",
       "likes": 19
+=======
+      "thank_you_note": "Jacie, thank you for showing me by example and never judging me"
+>>>>>>> Stashed changes
     },
     {
       "your_first_name": "Sheev Palpatine",
@@ -55,6 +71,7 @@
       "story": "",
       "image_url": "https://i.ytimg.com/vi/__irG1Lker4/maxresdefault.jpg",
       "thank_you_note": "Spanks a latte",
+<<<<<<< Updated upstream
       "id": 4,
       "likes": 40
     },
@@ -67,12 +84,15 @@
       "thank_you_note": "5",
       "id": 5,
       "likes": null
+=======
+      "id": 4
+>>>>>>> Stashed changes
     }
   ],
   "comments": [
     {
       "id": 1,
-      "comment": "Welcome to the Jungle"
+      "comment": "Check out this link. Helps me everyday. https://www.reidhealth.org/blog/mental-health"
     }
   ]
 }

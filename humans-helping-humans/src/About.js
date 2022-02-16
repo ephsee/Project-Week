@@ -11,11 +11,11 @@ function About() {
 
                 <p>While here: </p>
                 <ul>
-                <li>Click on the {<a href= "http://localhost:6001/resources">resources</a>}  tab to watch Dr. Huberman lecture on the science of gratitude.</li>
-                <li>Click on the {<a href= "http://localhost:6001/stories">stories</a>}  tab to read stories about inspiring teachers, and boost your serontonin as a result.</li>
-                <li>Click to learn a random fact about gratitude on the {<a href= "http://localhost:6001/resources">resources</a>} tab.</li>
-                <li>Click on the {<a href= "http://localhost:6001/stories">stories</a>}  tab to share your own inspirational story of being helped, and boost someone's serotonin.</li>
-                <li>And remember, when you need a brain boost, think of these stories to imrpove your mood and sense of contentment.</li>
+                <li>Click on the {<a href="/resources">Resources</a>} tab to watch Dr. Huberman lecture on the science of gratitude.</li>
+                <li>Click on the {<a href="/storieslist">Stories List</a>} tab to read stories about inspiring teachers, and boost your serontonin as a result.</li>
+                <li>Click to learn a random fact about gratitude on the {<a href="/resources">Resources</a>} tab.</li>
+                <li>Click on the {<a href="/storieslist">Stories List</a>} tab to share your own inspirational story of being helped, and boost someone's serotonin.</li>
+                <li>And remember, when you need a brain boost, think of these stories to improve your mood and sense of contentment.</li>
                  </ul>
             </div>
         </div>
