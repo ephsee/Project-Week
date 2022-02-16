@@ -12,7 +12,7 @@ function NewStoryForm ({stories, setStories}) {
 
     function handleSubmit(e){
         e.preventDefault()
-        setStories([...stories, newStory])
+        
       
 
         fetch('http://localhost:6001/stories', {
@@ -28,6 +28,8 @@ function NewStoryForm ({stories, setStories}) {
             console.log(stories)
             
         })
+
+        setStories([...stories, newStory])
     }
 
     const newStory = {
@@ -37,6 +39,7 @@ function NewStoryForm ({stories, setStories}) {
         "story": story,
         "image_url": image,
         "thank_you_note": thanks,
+        "likes": 0
     }
 
     function handleName(e) {

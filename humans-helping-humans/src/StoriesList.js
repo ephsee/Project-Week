@@ -57,7 +57,6 @@ function StoriesList() {
 
     }, [])
 
-<<<<<<< Updated upstream
     // function storyIndex(){
 
     // for (i = stories.length; i > 0 ; i--) {
@@ -70,9 +69,6 @@ function StoriesList() {
         story={story}
         removeFecthStory={removeFecthStory}
         patchLikes={patchLikes} />)
-=======
-    const storyCard = stories.reverse().map(story => <Story key={story.name_of_person} story={story}/>)
->>>>>>> Stashed changes
 
     return (
         <div>
