@@ -17,7 +17,7 @@ function StoriesList() {
     const getFetchStories = () => {
         fetch(storyesLink)
             .then(r => r.json())
-            .then(setStories)
+            .then(data => setStories(data.reverse()))
     }
 
     function removeFecthStory(story) {
@@ -64,7 +64,7 @@ function StoriesList() {
     //     return <Story key={stories[i-1].name_of_person} story={stories[i-1]}/>
     // }}
 
-    const storyCard = stories.reverse().map(story => <Story
+    const storyCard = stories.map(story => <Story
         key={story.name_of_person}
         story={story}
         removeFecthStory={removeFecthStory}
@@ -81,6 +81,7 @@ function StoriesList() {
             <h3>Read User Stories</h3>
 
             {storyCard}
+
         </div>
     )
 }

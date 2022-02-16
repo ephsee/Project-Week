@@ -65,22 +65,32 @@
       "thank_you_note": "Spanks a latte",
       "id": 4,
       "likes": 40
-    },
-    {
-      "your_first_name": "1",
-      "name_of_person": "2",
-      "role": "3",
-      "story": "6",
-      "image_url": "4",
-      "thank_you_note": "5",
-      "likes": 0,
-      "id": 5
     }
   ],
   "comments": [
     {
       "id": 1,
       "comment": "Check out this link. Helps me everyday. https://www.reidhealth.org/blog/mental-health"
+    },
+    {
+      "comment": "“Many people are alive but don’t touch the miracle of being alive.” \n– Thích Nhất Hạnh, author of The Miracle of Mindfulness: An Introduction to the Practice of Meditation",
+      "id": 2
+    },
+    {
+      "comment": "“The way to live in the present is to remember that ‘This too shall pass.’ When you experience joy, remembering that ‘This too shall pass’ helps you savor the here and now. When you experience pain and sorrow, remembering that ‘This too shall pass’ reminds you that grief, like joy, is only temporary.”\n– Joey Green",
+      "id": 3
+    },
+    {
+      "comment": "“I wish that life should not be cheap, but sacred. I wish the days to be as centuries, loaded, fragrant.” \n\n–Ralph Waldo Emerson, The Essential Writings of Ralph Waldo Emerson",
+      "id": 4
+    },
+    {
+      "comment": "“Few of us ever live in the present. We are forever anticipating what is to come or remembering what has gone.” \n– Louis L’Amour",
+      "id": 5
+    },
+    {
+      "comment": "“If you feel lost, disappointed, hesitant, or weak, return to yourself, to who you are, here and now and when you get there, you will discover yourself, like a lotus flower in full bloom, even in a muddy pond, beautiful and strong.“ \n– Masaru Emoto, The Hidden Messages in Water",
+      "id": 6
     }
   ]
 }

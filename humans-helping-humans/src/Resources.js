@@ -3,13 +3,15 @@ import ResourceCard from './ResourceCard'
 
 function Resources(){
 
-    const [resourses, setResources] = useState([])
+    const [resources, setResources] = useState([])
 
     useEffect(()=>{
         fetch("http://localhost:6001/comments")
         .then(r=>r.json())
-        .then(setResources)
+        .then(data => setResources(data.reverse()))
     }, [])
+
+    console.log(resources)
 
     const [facts, setFacts] = useState([])
 
@@ -43,8 +45,8 @@ function Resources(){
         <div>
             <div>
                 <h3>Use These Resources On Your Journey</h3>
-                <p>The Science of Gratitude and How to Build a Gratitude Practice | Huberman Lab Podcast #47</p>
-                <iframe width="1280" height="720" src="https://www.youtube.com/embed/KVjfFN89qvQ?start=551" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                    <p>The Science of Gratitude and How to Build a Gratitude Practice | Huberman Lab Podcast #47</p>
+                    <iframe width="1280" height="720" src="https://www.youtube.com/embed/KVjfFN89qvQ?start=551" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
                 <div>
                     <p>See These Links For Further Reading: </p>
                     <div> 
@@ -55,11 +57,11 @@ function Resources(){
                     </div>
                 </div>
                 <hr></hr>
-                <div onClick={aFact}>Click me For a Scienceterrific Fact about Gratitude!</div>
-                <p>{rando.gratitude_fact}</p>
+                    <div onClick={aFact}>Click me For a Scienceterrific Fact about Gratitude!</div>
+                    <p>{rando.gratitude_fact}</p>
                 <hr></hr>
             </div>
-            <ResourceCard resourses={resourses} />
+            <ResourceCard resources={resources} setResources={setResources}/>
         </div>
     )
 }

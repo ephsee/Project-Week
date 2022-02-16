@@ -29,7 +29,7 @@ function NewStoryForm ({stories, setStories}) {
             
         })
 
-        setStories([...stories, newStory])
+        setStories([newStory, ...stories])
     }
 
     const newStory = {
@@ -76,7 +76,7 @@ function NewStoryForm ({stories, setStories}) {
         <div>
             <h4>Share Your Own</h4>
             <form>
-                <input onChange={handleName} type="text" placeholder="Your Name"></input><br></br>
+                <input onChange={handleName} type="text" placeholder="Your First Name"></input><br></br>
                 <input onChange={handlePerson} type="text" placeholder="Your Person"></input><br></br>
                 <input onChange={handleRole} type="text" placeholder="Their Role"></input><br></br>
                 <input onChange={handleImage} type="text" placeholder="Share an Image"></input><br></br>

@@ -12,7 +12,7 @@ function Story({ story, removeFecthStory, patchLikes }) {
     const likeIt = () => {
         const newLikes = likes + 1;
         setLikes(newLikes)
-        patchLikes(story,newLikes)
+        patchLikes(story, newLikes)
     }
 
     
