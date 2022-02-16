@@ -1,6 +1,6 @@
-import {useState} from 'react'
+import { useState } from 'react'
 
-function NewStoryForm ({stories, setStories}) {
+function NewStoryForm({ makeNewStory }) {
 
     const [name, setName] = useState('')
     const [person, setPerson] = useState('')
@@ -10,26 +10,14 @@ function NewStoryForm ({stories, setStories}) {
     const [thanks, setThanks] = useState('')
 
 
-    function handleSubmit(e){
+
+    function handleSubmit(e) {
         e.preventDefault()
-        
-      
 
-        fetch('http://localhost:6001/stories', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(newStory),
-            })
-            .then(response => response.json())
-            .then(data => {
-            console.log('Success:', data);
-            console.log(stories)
-            
-        })
 
-        setStories([newStory, ...stories])
+
+        console.log(newStory);
+        makeNewStory(newStory)
     }
 
     const newStory = {

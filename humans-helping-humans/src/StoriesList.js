@@ -13,6 +13,32 @@ function StoriesList() {
     function clickShow() {
         setShowStoriesForm(!showStoriesForm)
     }
+    
+    console.log(stories)
+
+    const makeNewStory = (story) => {
+
+
+        fetch('http://localhost:6001/stories', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(story),
+            })
+            .then(response => response.json())
+            .then(data => {
+            console.log('Success:', data);
+            console.log(stories)
+            
+        })
+
+
+
+        setStories([...stories,story]);
+        getFetchStories();
+
+    }
 
     const getFetchStories = () => {
         fetch(storyesLink)
@@ -76,7 +102,7 @@ function StoriesList() {
             <hr></hr>
             <div onClick={clickShow}>CLICK HERE TO ADD A STORY!</div>
             <hr></hr>
-            <div>{showStoriesForm ? null : <NewStoryForm stories={stories} setStories={setStories} />}</div>
+            <div>{showStoriesForm ? null : <NewStoryForm /*stories={stories} setStories={setStories}*/ makeNewStory= {makeNewStory}  />}</div>
             <hr></hr>
             <h3>Read User Stories</h3>
 

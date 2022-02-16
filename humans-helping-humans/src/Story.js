@@ -2,7 +2,7 @@ import { useState } from "react";
 
 function Story({ story, removeFecthStory, patchLikes }) {
 
-
+    
     const [likes, setLikes] = useState(story.likes);
 
     const trashPost = () => {
