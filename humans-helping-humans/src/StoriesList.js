@@ -1,6 +1,8 @@
 import Story from './Story'
-import {useState, useEffect} from 'react'
+import { useState, useEffect } from 'react'
 import NewStoryForm from './NewStoryForm'
+
+const storyesLink = "http://localhost:6001/stories";
 
 function StoriesList() {
 
@@ -12,19 +14,48 @@ function StoriesList() {
         setShowStoriesForm(!showStoriesForm)
     }
 
-    useEffect(()=>{
+    const getFetchStories = () => {
+        fetch(storyesLink)
+            .then(r => r.json())
+            .then(setStories)
+    }
+
+    function removeFecthStory(story) {
+        fetch(storyesLink + "/" + story.id,
+            { method: "DELETE" })
+            .then(console.log)
+
+        getFetchStories();
+
+    }
+
+    function patchLikes(story, likes) {
+        fetch(storyesLink + "/" + story.id, {
+            method: "PATCH",
+            headers: {
+                Accept: "application/json",
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(
+                {
+                    likes: parseInt(likes)
+                })
+
+        }).then(r => r.json()).then(console.log)
+    }
+
+    useEffect(() => {
 
         const controller = new AbortController();
 
-        fetch("http://localhost:6001/stories")
-        .then(r=>r.json())
-        .then(setStories)
+        getFetchStories();
 
         return () => {
-            
-        controller.abort();}
 
-    },[])
+            controller.abort();
+        }
+
+    }, [])
 
     // function storyIndex(){
 
@@ -33,17 +64,21 @@ function StoriesList() {
     //     return <Story key={stories[i-1].name_of_person} story={stories[i-1]}/>
     // }}
 
-    const storyCard = stories.reverse().map(story => <Story key={story.name_of_person} story={story}/>)
+    const storyCard = stories.reverse().map(story => <Story
+        key={story.name_of_person}
+        story={story}
+        removeFecthStory={removeFecthStory}
+        patchLikes={patchLikes} />)
 
     return (
         <div>
             <hr></hr>
             <div onClick={clickShow}>CLICK ME TO ADD A STORY!</div>
             <hr></hr>
-            <div>{showStoriesForm ? null : <NewStoryForm stories={stories} setStories={setStories}/>}</div>
+            <div>{showStoriesForm ? null : <NewStoryForm stories={stories} setStories={setStories} />}</div>
             <hr></hr>
             <h3>Read User Stories</h3>
-            
+
             {storyCard}
 
         </div>
