@@ -46,5 +46,10 @@
       "thank_you_note": "Shot-a-lot Mr Ants."
     }
   ],
-  "comments": []
+  "comments": [
+    {
+      "id": 1,
+      "comment": "Welcome to the Jungle"
+    }
+  ]
 }

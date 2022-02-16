@@ -6,10 +6,10 @@ function StoriesList() {
 
     const [stories, setStories] = useState([])
 
-    const [showStories, setShowStories] = useState(true)
+    const [showStoriesForm, setShowStoriesForm] = useState(true)
 
     function clickShow() {
-        setShowStories(!showStories)
+        setShowStoriesForm(!showStoriesForm)
     }
 
     useEffect(()=>{
@@ -33,7 +33,7 @@ function StoriesList() {
             <hr></hr>
             <div onClick={clickShow}>CLICK ME TO ADD A STORY!</div>
             <hr></hr>
-            <div>{showStories ? null : <NewStoryForm stories={stories} setStories={setStories}/>}</div>
+            <div>{showStoriesForm ? null : <NewStoryForm stories={stories} setStories={setStories}/>}</div>
             <hr></hr>
             <h3>Read User Stories</h3>
             

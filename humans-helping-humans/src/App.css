@@ -6,13 +6,16 @@ body {
   text-align: center;
 }
 
+.text-font {
+  font-family: tahoma
+}
+
 .App-header {
 
   /* font-family: 'Calligraffitti', cursive; */
   /* font-family: 'Palette Mosaic', cursive; */
   /* font-family: 'Raleway', sans-serif; */
   font-family: 'Rye', cursive;
-
   background-color: #005F73;
   min-height: 100vh;
   display: flex;

@@ -4,7 +4,6 @@ function About() {
     return (
         <div>
             <h3> About Humans Helping Humans </h3>
-            {/* <img src="./assets/PNG image.png" alt='lara'/> */}
             <img src={require('./assets/PNG image.png')} />
             <p> This app is a combination of inspirations. First, the endless impact teachers, mentors, and friends have on our lives and the collectie good we enjoy from those lessons learned. Second, the amazing resource of scientific data, distilled by neorbiologist and optimologist Dr. Andrew Huberman. His free of cost podcast/youtube channel distills meaning and actionable ideas for optimizing health. On this site, visit the resource tab to learn about the scientific beenfits of gratitiude, and to dispell the myths of gratitude. On the Stories tab, hear how others have been impacted by their teachers and mentors. TRHe benefit of hearing and sharing the narrative of  humans helping humans is undeniedable!
 

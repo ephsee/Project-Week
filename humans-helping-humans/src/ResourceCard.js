@@ -1,9 +1,8 @@
-
 function ResourceCard({resourses}) {
 
     const resource = resourses.map(r=>{
         return(
-        <p key = {r.id}> {r.gratitude_fact} </p>
+        <p key = {r.id}> {r.comment} </p>
         )
     })
     

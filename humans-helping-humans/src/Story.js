@@ -1,7 +1,7 @@
 
 function Story({story}) {
 
-    return(
+    return (
         <div>
             <hr></hr>
             <h3>User Name: {story.your_first_name}</h3>

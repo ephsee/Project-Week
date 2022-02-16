@@ -56,9 +56,6 @@ function NavBar() {
             to="/about"
             exact
             style={linkStyles}
-            // activeStyle={{
-            //   background: "black",
-            // }}
           >
             About
           </NavLink>
@@ -66,9 +63,6 @@ function NavBar() {
             to="/storieslist"
             exact
             style={linkStyles}
-            // activeStyle={{
-            //   background: "black",
-            // }}
           >
             Stories List
           </NavLink>
@@ -76,9 +70,6 @@ function NavBar() {
             to="/resources"
             exact
             style={linkStyles}
-            // activeStyle={{
-            //   background: "black",
-            // }}
           >
             Resources
           </NavLink>
@@ -95,6 +86,6 @@ function HomeButton() {
   }
 
   return (
-    <p style={linkStyles} type="button" activeStyle={{background: "black"}} onClick={handleClick}>Home </p>
+    <p style={linkStyles} type="button" onClick={handleClick}>Home </p>
   )
 }
