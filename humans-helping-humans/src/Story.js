@@ -21,7 +21,7 @@ function Story({ story, removeFecthStory, patchLikes }) {
 
     return (
         <div className="story">
-            
+            <div>
             <h3>User Name: {story.your_first_name}</h3>
             <h4>Story About: {story.name_of_person}</h4>
             <h4>Their Role in your Life: {story.role}</h4>
@@ -31,10 +31,8 @@ function Story({ story, removeFecthStory, patchLikes }) {
             <button className='buttons'
                 onClick={trashPost}
             >x</button>
-            <button className='buttons' onClick={likeIt}>
-                ❤️  {likes}
-            </button>
-            
+            <button className='buttons' onClick={likeIt}>❤️ {likes}</button>
+            </div>           
         </div>
     )
 }

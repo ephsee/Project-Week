@@ -2,22 +2,23 @@ body {
   background-color: rgb(99, 146, 173);
   color: white;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
 }
 
 .buttons {
   background: black;
-  color: rgb(182, 50, 50);
+  color: white;
   border-radius: 30px;
 }
 
 .story {
   background: rgb(149, 178, 204);
-  color: black;
+  color: rgb(65, 58, 73);
   border-radius: 10px;
   border: 10px rgb(35, 35, 44);
   text-align: center;
   align-items: center;
-  max-width: 800px;
+  width: 800px;
   margin: auto;
 }
 
@@ -27,8 +28,17 @@ body {
   border-radius: 10px;
   text-align: center;
   align-items: center;
-  max-width: 500px;
+  width: 800px;
   margin: auto;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  padding: 25px;
+  padding-top: 10px ;
+  text-align: center;
 }
 
 .links {
@@ -42,15 +52,42 @@ body {
   color: white;
   text-align: center;
   align-items: center;
-  max-width: 300px;
 }
 
 .picture {
   border: 10px solid black;
   border-radius: 12px;
   text-align: center;
-  align-items: center;
   margin: auto;
+  height: 500px;
+  width: auto;
+}
+
+.crop {
+  height: 500px;
+  width: auto;
+  object-fit: cover;
+}
+
+.brain {
+  text-align: center;
+  margin: auto;
+  height: 500px;
+  width: auto;
+}
+
+.makeSpace {
+  padding: 10px
+}
+
+.floatLeft {
+  float: left;
+  padding-left: 100px;
+}
+
+.floatRight {
+  float: right;
+  padding-right: 100px;
 }
 
 /* .horizontal-scroll{

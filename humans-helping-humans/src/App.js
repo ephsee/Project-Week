@@ -37,10 +37,11 @@ export default App;
 function NavBar() {
   return (
     <div>
-        <div className='links'>
+        {/* <div className='links'>
           <HomeButton />
-        </div>
-        <div >
+        </div> */}
+        <div className='flex'>
+          <HomeButton />
           <NavLink
             to="/about"
             exact         
@@ -75,6 +76,6 @@ function HomeButton() {
   }
 
   return (
-    <div type="button" onClick={handleClick}>Home </div>
+    <div className='links' type="button" onClick={handleClick}>Home </div>
   )
 }

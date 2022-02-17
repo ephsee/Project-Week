@@ -1,6 +1,7 @@
 import Story from './Story'
 import { useState, useEffect } from 'react'
 import NewStoryForm from './NewStoryForm'
+import "./assets/people.png"
 
 const storyesLink = "http://localhost:6001/stories";
 
@@ -94,15 +95,14 @@ function StoriesList() {
         patchLikes={patchLikes} />)
 
     return (
-        <div>
-
-            <hr></hr>
-            <div onClick={clickShow}>CLICK HERE TO ADD A STORY!</div>
-            <hr></hr>
-            <div>{showStoriesForm ? null : <NewStoryForm /*stories={stories} setStories={setStories}*/ makeNewStory={makeNewStory} />}</div>
-            <hr></hr>
-            <h3>Read User Stories</h3>
-            <div>
+        <div className='makeSpace'>
+            <div className='floatLeft'>
+                <div onClick={clickShow}> <h3 className='story'>CLICK HERE TO SHARE A STORY!</h3></div>
+                <div>{showStoriesForm ? null : <NewStoryForm /*stories={stories} setStories={setStories}*/ makeNewStory={makeNewStory} />}</div>
+                <img className='makeSpace' width='500ps' src={require('./assets/people.png')} alt='people' />
+            </div>
+            <div className='floatRight'>
+            <h3 className='story'>Read User Stories</h3>
                 <div>
                 {storyCard}
                 </div>

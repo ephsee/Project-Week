@@ -65,20 +65,19 @@ function ResourceCard({ resources, setResources }) {
     const Comment = ({ r, killComment }) => {
         const deleteCommentClick = () => killComment(r)
         return (
-            <li className="story" >{r.comment}
-                <button className='buttons' onClick={deleteCommentClick}>x</button>
-            </li>)
-    }
-
+            <div className='makeSpace'><li>{r.comment}</li> <button className='buttons' onClick={deleteCommentClick}> x </button> <br></br> </div>
+    )}
 
     return (
         <div>
+            <div className='story'>
             <h3>Share Resources And Research For Effective Gratiude Practices: </h3>
             <form>
                 <textarea rows="5" cols="45" onChange={handleComment} type="text" placeholder="Share Your Resources and Tips" value={newComment}></textarea><br></br>
                 <input onClick={commentSubmit} type="submit"></input>
             </form>
-            <div className='comments'><ul>
+            </div>
+            <div className="story" ><ul>
                 <Resource />
             </ul></div>
         </div>
