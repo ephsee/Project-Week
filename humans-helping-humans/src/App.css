@@ -32,6 +32,11 @@ body {
   margin: auto;
 }
 
+.aboutContainer {
+  width: 60%;
+  margin: auto;
+}
+
 .flex {
   display: flex;
   justify-content: space-around;
