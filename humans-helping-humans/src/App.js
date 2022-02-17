@@ -9,7 +9,7 @@ import Home from './Home'
 function App() {
 
   return (
-    <div className="App App-header">
+    <div>
       <div>
         <NavBar />
           <Switch>
@@ -34,44 +34,33 @@ function App() {
 
 export default App;
 
-const linkStyles = {
-  display: "inline-block",
-  borderRadius: "20px",
-  width: "500px",
-  padding: "12px",
-  margin: "0 6px 6px",
-  background: "#9B2226",
-  textDecoration: "none",
-  color: "white",
-}
-
 function NavBar() {
   return (
     <div>
-        <div>
+        <div className='links'>
           <HomeButton />
         </div>
-        <div>
+        <div >
           <NavLink
             to="/about"
-            exact
-            style={linkStyles}
+            exact         
+            className='links'   
           >
             About
           </NavLink>
           <NavLink
             to="/storieslist"
-            exact
-            style={linkStyles}
+            exact            
+            className='links'
           >
-            Stories List
+            Stories List  
           </NavLink>
           <NavLink
             to="/resources"
-            exact
-            style={linkStyles}
+            exact            
+            className='links'
           >
-            Resources
+            Resources  
           </NavLink>
         </div>
       </div>
@@ -86,6 +75,6 @@ function HomeButton() {
   }
 
   return (
-    <p style={linkStyles} type="button" onClick={handleClick}>Home </p>
+    <div type="button" onClick={handleClick}>Home </div>
   )
 }

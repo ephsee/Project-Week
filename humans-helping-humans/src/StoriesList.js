@@ -102,9 +102,11 @@ function StoriesList() {
             <div>{showStoriesForm ? null : <NewStoryForm /*stories={stories} setStories={setStories}*/ makeNewStory={makeNewStory} />}</div>
             <hr></hr>
             <h3>Read User Stories</h3>
-
-            {storyCard}
-
+            <div>
+                <div>
+                {storyCard}
+                </div>
+            </div>
         </div>
     )
 }

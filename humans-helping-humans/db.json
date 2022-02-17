@@ -91,26 +91,6 @@
     {
       "comment": "“If you feel lost, disappointed, hesitant, or weak, return to yourself, to who you are, here and now and when you get there, you will discover yourself, like a lotus flower in full bloom, even in a muddy pond, beautiful and strong.“ \n– Masaru Emoto, The Hidden Messages in Water",
       "id": 6
-    },
-    {
-      "comment": "blablablablabla abla.    const killComment = res => {\n        console.log(\"to dletete id:\",res.id)\n\n        fetch(linkBEComments + \"/\" + res.id,\n        { method: \"DELETE\" })\n        .then(console.log)\n\n\n        const resourecsWOdelletedComent = resources.filter(({ id }) => id !== res.id)\n        setResources(resourecsWOdelletedComent);\n\n \n   const killComment = res => {\n        console.log(\"to dletete id:\",res.id)\n\n        fetch(linkBEComments + \"/\" + res.id,\n        { method: \"DELETE\" })\n        .then(console.log)\n\n\n        const resourecsWOdelletedComent = resources.filter(({ id }) => id !== res.id)\n        setResources(resourecsWOdelletedComent);\n\n \n    } const killComment = res => {\n        console.log(\"to dletete id:\",res.id)\n\n        fetch(linkBEComments + \"/\" + res.id,\n        { method: \"DELETE\" })\n        .then(console.log)\n\n\n        const resourecsWOdelletedComent = resources.filter(({ id }) => id !== res.id)\n        setResources(resourecsWOdelletedComent);\n\n \n    } const killComment = res => {\n        console.log(\"to dletete id:\",res.id)\n\n        fetch(linkBEComments + \"/\" + res.id,\n        { method: \"DELETE\" })\n        .then(console.log)\n\n\n        const resourecsWOdelletedComent = resources.filter(({ id }) => id !== res.id)\n        setResources(resourecsWOdelletedComent);\n\n \n    } const killComment = res => {\n        console.log(\"to dletete id:\",res.id)\n\n        fetch(linkBEComments + \"/\" + res.id,\n        { method: \"DELETE\" })\n        .then(console.log)\n\n\n        const resourecsWOdelletedComent = resources.filter(({ id }) => id !== res.id)\n        setResources(resourecsWOdelletedComent);\n\n \n    } const killComment = res => {\n        console.log(\"to dletete id:\",res.id)\n\n        fetch(linkBEComments + \"/\" + res.id,\n        { method: \"DELETE\" })\n        .then(console.log)\n\n\n        const resourecsWOdelletedComent = resources.filter(({ id }) => id !== res.id)\n        setResources(resourecsWOdelletedComent);\n\n \n    } const killComment = res => {\n        console.log(\"to dletete id:\",res.id)\n\n        fetch(linkBEComments + \"/\" + res.id,\n        { method: \"DELETE\" })\n        .then(console.log)\n\n\n        const resourecsWOdelletedComent = resources.filter(({ id }) => id !== res.id)\n        setResources(resourecsWOdelletedComent);\n\n \n    } const killComment = res => {\n        console.log(\"to dletete id:\",res.id)\n\n        fetch(linkBEComments + \"/\" + res.id,\n        { method: \"DELETE\" })\n        .then(console.log)\n\n\n        const resourecsWOdelletedComent = resources.filter(({ id }) => id !== res.id)\n        setResources(resourecsWOdelletedComent);\n\n \n    } const killComment = res => {\n        console.log(\"to dletete id:\",res.id)\n\n        fetch(linkBEComments + \"/\" + res.id,\n        { method: \"DELETE\" })\n        .then(console.log)\n\n\n        const resourecsWOdelletedComent = resources.filter(({ id }) => id !== res.id)\n        setResources(resourecsWOdelletedComent);\n\n \n    } const killComment = res => {\n        console.log(\"to dletete id:\",res.id)\n\n        fetch(linkBEComments + \"/\" + res.id,\n        { method: \"DELETE\" })\n        .then(console.log)\n\n\n        const resourecsWOdelletedComent = resources.filter(({ id }) => id !== res.id)\n        setResources(resourecsWOdelletedComent);\n\n \n    } const killComment = res => {\n        console.log(\"to dletete id:\",res.id)\n\n        fetch(linkBEComments + \"/\" + res.id,\n        { method: \"DELETE\" })\n        .then(console.log)\n\n\n        const resourecsWOdelletedComent = resources.filter(({ id }) => id !== res.id)\n        setResources(resourecsWOdelletedComent);\n\n \n    }  }",
-      "id": 7
-    },
-    {
-      "comment": "hello",
-      "id": 8
-    },
-    {
-      "comment": "blabla",
-      "id": 9
-    },
-    {
-      "comment": "tired",
-      "id": 10
-    },
-    {
-      "comment": "pupyk",
-      "id": 11
     }
   ]
 }

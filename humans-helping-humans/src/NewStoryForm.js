@@ -58,7 +58,7 @@ function NewStoryForm({ makeNewStory }) {
     }
 
     return (
-        <div>
+        <div className='comment'>
             <h4>Share Your Own</h4>
             <form>
                 <input onChange={handleName} type="text" placeholder="Your First Name"></input><br></br>

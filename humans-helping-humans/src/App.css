@@ -1,26 +1,71 @@
 body {
-  background-color: black;
+  background-color: rgb(99, 146, 173);
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.App {
+.buttons {
+  background: black;
+  color: rgb(182, 50, 50);
+  border-radius: 30px;
+}
+
+.story {
+  background: rgb(149, 178, 204);
+  color: black;
+  border-radius: 10px;
+  border: 10px rgb(35, 35, 44);
   text-align: center;
-}
-
-.text-font {
-  font-family: tahoma
-}
-
-.App-header {
-
-  /* font-family: 'Calligraffitti', cursive; */
-  /* font-family: 'Palette Mosaic', cursive; */
-  /* font-family: 'Raleway', sans-serif; */
-  font-family: 'Rye', cursive;
-  background-color: #005F73;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  font-size: calc(10px + 2vmin);
-  color: darkgrey;
+  max-width: 800px;
+  margin: auto;
 }
+
+.comments {
+  background: rgb(78, 104, 126);
+  color: black;
+  border-radius: 10px;
+  text-align: center;
+  align-items: center;
+  max-width: 500px;
+  margin: auto;
+}
+
+.links {
+  display: inline-block;
+  border-radius: 20px;
+  width: 500px;
+  padding: 12px;
+  margin: 0 6px 6px;
+  background: #276c8b;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  align-items: center;
+  max-width: 300px;
+}
+
+.picture {
+  border: 10px solid black;
+  border-radius: 12px;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+}
+
+/* .horizontal-scroll{
+  width: 100px;
+  height: 300px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transform: rotate(-90deg);
+  transform-origin: right top;
+  transform:rotate(-90deg) translateY(-100px);
+}
+
+.horizontal-scroll-wrapper {
+  width: 100px;
+  height: 100px;
+  transform: rotate(90deg);
+  transform-origin: right top;
+} */
