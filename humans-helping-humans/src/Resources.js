@@ -9,6 +9,10 @@ function Resources(){
         fetch("http://localhost:6001/comments")
         .then(r=>r.json())
         .then(data => setResources(data.reverse()))
+
+        fetch("http://localhost:6001/facts")
+        .then(r => r.json())
+        .then(setFacts)
     }, [])
 
     console.log(resources)
@@ -17,22 +21,33 @@ function Resources(){
 
     const [rando, setRando] = useState('')
 
-    useEffect(() => {
-        fetch("http://localhost:6001/facts")
-        .then(r => r.json())
-        .then(setFacts)
-    }, [])
+    function getIndex(max) {
+        
+        let min = 0;
+        max = Math.floor(max);
+        let res = Math.floor(Math.random() * (max - min + 1) + min)
+        console.log("previous num was:",rando.id-1)
+        console.log("random number---->",res);
+        
+        if (res === rando.id-1) {
+            res =res+1;
+        }
+        
+        if (res > max){
+            res= min;
+        }
 
-    function getIndex(min, max) {
-        min = Math.floor(min);
-        max = Math.ceil(max);
-        return Math.floor(Math.random() * max + min)
+        console.log("corrected number---->",res);
+        return res
     }
 
-    const randomFact = facts[getIndex(0, facts.length)]
+    const randomFact = facts[getIndex(facts.length-1)]
 
-    function aFact() {
+    function aFact(e) {
+        console.log(e.target.value)
         setRando(randomFact)
+        console.log("random fact here:",rando)
+        
     }
     
     console.log('all facts', facts)
