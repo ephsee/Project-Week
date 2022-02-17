@@ -6,7 +6,7 @@
     },
     {
       "id": 2,
-      "gratitude_fact": "Gratitude practices that help promote positve feelings of contentment are a reseult of the release of the neortransmitter serontonin. Narrative story-telling, where a person shares how another person helped htem through a hard time, can provide a sense of wellbeing, as proven by studeis done inside of MRIs imaging the brain."
+      "gratitude_fact": "Gratitude practices that help promote positive feelings of contentment are a result of the release of the neur0transmitter serotonin. Narrative story-telling, where a person shares how another person helped htem through a hard time, can provide a sense of wellbeing, as proven by studeis done inside of MRIs imaging the brain."
     },
     {
       "id": 3,
@@ -60,11 +60,21 @@
       "your_first_name": "Sheev Palpatine",
       "name_of_person": "Wilhuff Tarkin",
       "role": "Assistant",
-      "story": "",
+      "story": "Commander and man in charge of the Armada",
       "image_url": "https://i.ytimg.com/vi/__irG1Lker4/maxresdefault.jpg",
       "thank_you_note": "Spanks a latte",
       "id": 4,
       "likes": 43
+    },
+    {
+      "your_first_name": "Francois",
+      "name_of_person": "Tony Robbins",
+      "role": "Motivational Speaker",
+      "story": "This guy was on my tv screen for years when I was growing up, mainly because in South Africa we only had a handful of channels and one always had a home shopping network show on.",
+      "image_url": "https://pbs.twimg.com/profile_images/1257396956881498114/Fj13PSh-_400x400.jpg",
+      "thank_you_note": "Thanks banana hands",
+      "likes": 0,
+      "id": 5
     }
   ],
   "comments": [

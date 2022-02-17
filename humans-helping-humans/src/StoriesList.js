@@ -31,7 +31,6 @@ function StoriesList() {
                 console.log('Success:', data);
                 console.log(stories)
 
-                // setStories([...stories, story]);
                 getFetchStories();
 
             })
@@ -80,13 +79,6 @@ function StoriesList() {
         }
 
     }, [])
-
-    // function storyIndex(){
-
-    // for (i = stories.length; i > 0 ; i--) {
-    //     stories[i-1]
-    //     return <Story key={stories[i-1].name_of_person} story={stories[i-1]}/>
-    // }}
 
     const storyCard = stories.map(story => <Story
         key={story.name_of_person}

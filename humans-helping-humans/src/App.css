@@ -55,7 +55,16 @@ body {
 }
 
 .picture {
-  border: 10px solid black;
+  border: 10px solid rgb(49, 68, 97);
+  border-radius: 12px;
+  text-align: center;
+  margin: auto;
+  height: 500px;
+  width: auto;
+}
+
+.picture2 {
+  border: 10px solid rgb(22, 31, 44);
   border-radius: 12px;
   text-align: center;
   margin: auto;
@@ -80,6 +89,11 @@ body {
   padding: 10px
 }
 
+.makeSpaceBottom {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
 .floatLeft {
   float: left;
   padding-left: 100px;
@@ -90,19 +104,10 @@ body {
   padding-right: 100px;
 }
 
-/* .horizontal-scroll{
-  width: 100px;
-  height: 300px;
-  overflow-y: auto;
-  overflow-x: hidden;
-  transform: rotate(-90deg);
-  transform-origin: right top;
-  transform:rotate(-90deg) translateY(-100px);
+.listLeft {
+  text-align: left;
 }
 
-.horizontal-scroll-wrapper {
-  width: 100px;
-  height: 100px;
-  transform: rotate(90deg);
-  transform-origin: right top;
-} */
+.filter {
+  filter : brightness(150%)
+}

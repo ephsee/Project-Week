@@ -21,7 +21,6 @@ function Resources(){
         fetch("http://localhost:6001/facts")
         .then(r => r.json())
         .then(setFacts)
-        // .then(setRando(randomFact))
     }, [])
 
     function getIndex(min, max) {
@@ -37,7 +36,6 @@ function Resources(){
     }
     
     console.log('all facts', facts)
-    // console.log('a random fact', randomFact.gratitude_fact)
     console.log('rando state', rando.gratitude_fact)
 
 
@@ -56,8 +54,8 @@ function Resources(){
                     <a href="https://www.frontiersin.org/articles/10.3389/fpsyg.2015.01491/full"> - Neural correlates of gratitude</a>
                     </div>
                 </div>
-                    <div className='story makeSpace'>
-                    <div onClick={aFact}> 🧠 <u>Click me For a Scienceterrific Fact about Gratitude!</u> 🤯 </div>
+                    <div className='story makeSpaceBottom'>
+                    <div onClick={aFact}> 🧠 <u>Click me For a Scienterrific Fact about Gratitude!</u> 🤯 </div>
                     <p>{rando.gratitude_fact}</p>
                     </div>
             </div>
