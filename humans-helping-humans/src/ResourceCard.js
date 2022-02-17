@@ -14,7 +14,8 @@ function ResourceCard({ resources, setResources }) {
 
     function commentSubmit(e) {
         e.preventDefault()
-        setResources([aComment, ...resources])
+        
+        setResources([{"comment": aComment.comment,"id":resources.length+1}, ...resources])
 
         fetch(linkBEComments, {
             method: 'POST',
@@ -24,7 +25,7 @@ function ResourceCard({ resources, setResources }) {
             body: JSON.stringify(aComment),
         })
             .then(response => response.json())
-            .then(setResources([aComment, ...resources]))
+            // .then(setResources([aComment, ...resources]))
 
     }
 
@@ -45,7 +46,7 @@ function ResourceCard({ resources, setResources }) {
                 { method: "DELETE" })
                 .then(console.log)
 
-
+            console.log("before deletion state", resources)
             const resourecsWOdelletedComent = resources.filter(({ id }) => id !== res.id)
             setResources(resourecsWOdelletedComent);
 
