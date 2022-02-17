@@ -63,10 +63,10 @@ function Resources(){
                 <div className='makeSpace'>
                     <p>See These Links For Further Reading: </p>
                     <div className='makeSpace'> 
-                    <a href="https://www.sciencedirect.com/science/article/pii/S088915912100177X?via%3Dihub"> - Exploring neural mechanisms of the health benefits of gratitude in women: A randomized controlled trial</a>
+                    <a href="https://www.sciencedirect.com/science/article/pii/S088915912100177X?via%3Dihub" target="_blank"> - Exploring neural mechanisms of the health benefits of gratitude in women: A randomized controlled trial</a>
                     </div>
                     <div className='makeSpace'>
-                    <a href="https://www.frontiersin.org/articles/10.3389/fpsyg.2015.01491/full"> - Neural correlates of gratitude</a>
+                    <a href="https://www.frontiersin.org/articles/10.3389/fpsyg.2015.01491/full" target="_blank"> - Neural correlates of gratitude</a>
                     </div>
                 </div>
                     <div className='story makeSpaceBottom'>
