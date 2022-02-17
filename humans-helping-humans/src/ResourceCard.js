@@ -39,7 +39,7 @@ function ResourceCard({ resources, setResources }) {
 
     const Resource = () => {
         const killComment = res => {
-            console.log("to dletete id:", res.id)
+            console.log("to delete id:", res.id)
 
             fetch(linkBEComments + "/" + res.id,
                 { method: "DELETE" })

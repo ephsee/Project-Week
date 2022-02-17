@@ -54,7 +54,7 @@ function NavBar() {
             exact            
             className='links'
           >
-            Stories List  
+            Gratitude Stories   
           </NavLink>
           <NavLink
             to="/resources"
