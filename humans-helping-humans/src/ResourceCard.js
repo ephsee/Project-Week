@@ -25,16 +25,13 @@ function ResourceCard({ resources, setResources }) {
             body: JSON.stringify(aComment),
         })
             .then(response => response.json())
-
+            .then(setNewComment([aComment, ...resources]))
     }
 
     function handleComment(e) {
         console.log(e.target.value)
         setNewComment(e.target.value)
     }
-
-
-
 
 
     const Resource = () => {

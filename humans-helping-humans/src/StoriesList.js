@@ -49,7 +49,6 @@ function StoriesList() {
         const cuttedStories = stories.filter(({ id }) => id !== story.id)
         setStories(cuttedStories);
         
-
     }
 
     function patchLikes(story, likes) {

@@ -14,7 +14,7 @@ function About() {
     function YesPlease(){
 
         return (isClicked ? <> 
-                                <h3> Do you wanna more?</h3> 
+                                <h3> Do you want more?</h3> 
                                 <video onClick ={ handleClick}  src={video} width="600" height="300" autoPlay = {true} loop ={true}/>
                                 <h4> Yes, Please</h4>
                              </>:<></> 
