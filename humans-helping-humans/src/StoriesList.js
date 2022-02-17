@@ -90,8 +90,10 @@ function StoriesList() {
         <div className='makeSpace'>
             <div className='floatLeft'>
                 <div onClick={clickShow}> <h3 className='story'>CLICK HERE TO SHARE A STORY!</h3></div>
-                <div>{showStoriesForm ? null : <NewStoryForm /*stories={stories} setStories={setStories}*/ makeNewStory={makeNewStory} />}</div>
-                <img className='makeSpace' width='500ps' src={require('./assets/people.png')} alt='people' />
+                <div>{showStoriesForm ? null : <NewStoryForm makeNewStory={makeNewStory} />}</div>
+                <div className='makeSpaceBottom'>
+                <img src='https://cdn.pixabay.com/photo/2020/12/30/00/36/psychology-5872032_960_720.png' alt='people' />
+                </div>
             </div>
             <div className='floatRight'>
             <h3 className='story'>Read User Stories</h3>
