@@ -13,7 +13,7 @@ function StoriesList() {
     function clickShow() {
         setShowStoriesForm(!showStoriesForm)
     }
-    
+
     console.log(stories)
 
     const makeNewStory = (story) => {
@@ -24,16 +24,16 @@ function StoriesList() {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify(story),
-            })
+        })
             .then(response => response.json())
             .then(data => {
-            console.log('Success:', data);
-            console.log(stories)
-            
-            setStories([...stories, story]);
-            getFetchStories();
-            
-        })
+                console.log('Success:', data);
+                console.log(stories)
+
+                // setStories([...stories, story]);
+                getFetchStories();
+
+            })
     }
 
     const getFetchStories = () => {
@@ -46,8 +46,9 @@ function StoriesList() {
         fetch(storyesLink + "/" + story.id,
             { method: "DELETE" })
             .then(console.log)
-
-        getFetchStories();
+        const cuttedStories = stories.filter(({ id }) => id !== story.id)
+        setStories(cuttedStories);
+        
 
     }
 
@@ -98,7 +99,7 @@ function StoriesList() {
             <hr></hr>
             <div onClick={clickShow}>CLICK HERE TO ADD A STORY!</div>
             <hr></hr>
-            <div>{showStoriesForm ? null : <NewStoryForm /*stories={stories} setStories={setStories}*/ makeNewStory= {makeNewStory}  />}</div>
+            <div>{showStoriesForm ? null : <NewStoryForm /*stories={stories} setStories={setStories}*/ makeNewStory={makeNewStory} />}</div>
             <hr></hr>
             <h3>Read User Stories</h3>
 
