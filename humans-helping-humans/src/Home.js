@@ -10,7 +10,7 @@ function Home() {
             <img className="brain"
                 src={require('./assets/brain.png')} alt='brain'/>
             <div>
-            <h3>Welcome to an exercise in mindfulness and boost your mood!</h3>
+            <h3>Welcome to an exercise in gratitude and boost your mood!</h3>
             <img className="picture" src="https://cdn.pixabay.com/photo/2017/03/26/21/54/yoga-2176668_960_720.jpg" alt='mindful' />
             </div>
         </div>
