@@ -5,12 +5,12 @@ function Home() {
     return (
         <div>
             <div>
-            <h1>Come Share With Us</h1>
+            <h1 className='funText'>Come Share With Us</h1>
             </div>
             <img className="brain"
                 src={require('./assets/brain.png')} alt='brain'/>
             <div>
-            <h3>Welcome to an exercise in gratitude and boost your mood!</h3>
+            <h2 className='funText'>Welcome to an exercise in gratitude and boost your mood!</h2>
             </div>
         </div>
     )

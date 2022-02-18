@@ -15,8 +15,8 @@ function ResourceCard({ resources, setResources }) {
     function commentSubmit(e) {
         e.preventDefault()
         
-        setResources([{"comment": aComment.comment,"id":resources.length+1}, ...resources])
-
+        // setResources([{"comment": aComment.comment,"id":resources.length+1}, ...resources])
+        
         fetch(linkBEComments, {
             method: 'POST',
             headers: {
@@ -24,13 +24,14 @@ function ResourceCard({ resources, setResources }) {
             },
             body: JSON.stringify(aComment),
         })
-            .then(response => response.json())
-            // .then(setResources([aComment, ...resources]))
-            setNewComment('')
+        .then(response => response.json())
+        // .then(setResources([aComment, ...resources]))
+        setNewComment('')
+        setResources([aComment, ...resources])
     }
 
     function handleComment(e) {
-        console.log(e.target.value)
+        // console.log(e.target.value)
         setNewComment(e.target.value)
     }
 
@@ -46,10 +47,11 @@ function ResourceCard({ resources, setResources }) {
             console.log("before deletion state", resources)
             const resourecsWOdelletedComent = resources.filter(({ id }) => id !== res.id)
             setResources(resourecsWOdelletedComent);
-
-
+            console.log('state after delete', resources)
+            
         }
         return (
+            
             resources.map(r => {
 
                 return (
@@ -58,17 +60,16 @@ function ResourceCard({ resources, setResources }) {
             }))
     }
 
-
     const Comment = ({ r, killComment }) => {
         const deleteCommentClick = () => killComment(r)
         return (
-            <div className='makeSpace'><li>{r.comment}</li> <button className='buttons' onClick={deleteCommentClick}> x </button> <br></br> </div>
+            <div className='makeSpace listSquare'><li>{r.comment}</li> <button className='buttons' onClick={deleteCommentClick}> x </button> <br></br> </div>
     )}
 
     return (
         <div>
             <div className='story'>
-            <h3>Share Resources And Research For Effective Gratiude Practices: </h3>
+            <h2 className='funText'>Share Resources And Research For Effective Gratiude Practices: </h2>
             <form>
                 <textarea rows="5" cols="45" onChange={handleComment} type="text" placeholder="Share Your Resources and Tips" value={newComment}></textarea><br></br>
                 <input onClick={commentSubmit} type="submit"></input>

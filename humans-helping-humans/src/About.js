@@ -22,7 +22,7 @@ function About() {
 
     return (
         <div>
-            <h3> About Humans Helping Humans </h3>
+            <h2 className='funText'> About Humans Helping Humans </h2>
                 <div>
                     <div>
                         <div>
@@ -33,7 +33,7 @@ function About() {
                         <YesPlease />
                         <div className='story makeSpace'>
                             <p>While here: </p>
-                            <ul className='listLeft'>
+                            <ul className='listLeft listSquare'>
                             <li>Click on the {<a href="/resources">Resources</a>} tab to watch Dr. Huberman lecture on the science of gratitude.</li>
                             <li>Click on the {<a href="/storieslist">Stories List</a>} tab to read stories about  <span onClick = {handleClick} style = {{color : "#bb2965" , backgroundColor : "#95b2cc"}}> inspiring</span> teachers, and boost your serontonin as a result.</li>
                             <li>Click on the {<a href="https://youtu.be/dQw4w9WgXcQ?t=42" alt='rick' target="_blank">Stories List</a>} tab to share your own inspirational story of being helped, and boost someone's serotonin.</li>

@@ -11,6 +11,16 @@ body {
   border-radius: 30px;
 }
 
+.funText {
+  font-family: 'Calligraffitti', cursive;
+  /* font-family: 'Palette Mosaic', cursive; */
+  /* font-family: 'Raleway', sans-serif; */
+  font-family: 'Rock Salt', cursive;
+  /* font-family: 'Rye', cursive; */
+
+  color: rgb(32, 50, 75)
+}
+
 .story {
   background: rgb(149, 178, 204);
   color: rgb(65, 58, 73);
@@ -111,6 +121,10 @@ body {
 
 .listLeft {
   text-align: left;
+}
+
+.listSquare {
+  list-style-type: square;
 }
 
 .filter {

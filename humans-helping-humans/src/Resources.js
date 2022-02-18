@@ -15,7 +15,7 @@ function Resources(){
         .then(setFacts)
     }, [])
 
-    console.log(resources)
+    // console.log(resources)
 
     const [facts, setFacts] = useState([])
 
@@ -26,8 +26,8 @@ function Resources(){
         let min = 0;
         max = Math.floor(max);
         let res = Math.floor(Math.random() * (max - min + 1) + min)
-        console.log("previous num was:",rando.id-1)
-        console.log("random number---->",res);
+        // console.log("previous num was:",rando.id-1)
+        // console.log("random number---->",res);
         
         if (res === rando.id-1) {
             res =res+1;
@@ -37,27 +37,26 @@ function Resources(){
             res= min;
         }
 
-        console.log("corrected number---->",res);
+        // console.log("corrected number---->",res);
         return res
     }
 
     const randomFact = facts[getIndex(facts.length-1)]
 
     function aFact(e) {
-        console.log(e.target.value)
         setRando(randomFact)
         console.log("random fact here:",rando)
         
     }
     
-    console.log('all facts', facts)
-    console.log('rando state', rando.gratitude_fact)
+    // console.log('all facts', facts)
+    // console.log('rando state', rando.gratitude_fact)
 
 
     return(
         <div>
             <div>
-                <h3>Use These Resources On Your Journey</h3>
+                <h2 className='funText'>Use These Resources On Your Journey</h2>
                     <p>The Science of Gratitude and How to Build a Gratitude Practice | Huberman Lab Podcast #47</p>
                     <iframe width="1280" height="720" src="https://www.youtube.com/embed/KVjfFN89qvQ?start=551" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
                 <div className='makeSpace'>
